@@ -1,0 +1,46 @@
+.hero {
+	min-height: 100vh;
+	position: relative;
+	z-index: 1;
+	background: url('/assets/images/hero-bg.png'),
+		linear-gradient(88.57deg, rgba(0, 0, 0, 0.3) 7.05%, rgba(0, 0, 0, 0) 88.83%),
+		linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2)),
+		url(82303825_3457178317658022_8003798369300381696_o.jpg) no-repeat center;
+	background-size: cover;
+	&__container {
+		max-width: 1108px;
+		margin: 0 auto;
+	}
+	&__content {
+		padding-top: 33vh;
+	}
+	.button-group {
+		display: flex;
+		align-items: center;
+		a {
+			@include font('Halvar Breitschrift', 500, 14px, 16px, $color-white);
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.hero {
+		padding: 10px;
+		&__content {
+		}
+		.button-group {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.hero {
+		&__content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+	}
+}

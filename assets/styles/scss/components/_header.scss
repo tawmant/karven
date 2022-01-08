@@ -1,0 +1,49 @@
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 212312;
+	&__container {
+		max-width: 1310px;
+		margin: 17px auto;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__logo {
+		max-width: 113px;
+		object-fit: contain;
+	}
+	&__nav {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		&-item {
+			margin: 0 10px;
+		}
+	}
+	&__text {
+		@include font('Inter', 600, 14px, 17px, $color-white);
+		&:hover {
+			color: $color-white;
+		}
+	}
+	&__contacts {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 900px) {
+	.header {
+		&__row {
+			margin: 0 10px;
+		}
+		&__nav {
+			display: none;
+		}
+	}
+}

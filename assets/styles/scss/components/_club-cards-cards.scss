@@ -1,0 +1,83 @@
+.club-cards-cards {
+	padding: 86px 0 108px 166px;
+	.cards-list {
+		display: flex;
+		overflow-x: scroll;
+		position: relative;
+		margin-bottom: -15px;
+		padding: 46px 0 60px 0;
+		&::-webkit-scrollbar {
+			height: 3px;
+			border-radius: 5px;
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: #dadada;
+		}
+
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: $color-red;
+		}
+
+		&::-webkit-scrollbar-button {
+			// width: 300px;
+		}
+		&::-webkit-scrollbar-track {
+			margin-right: 600px;
+		}
+	}
+	&__item {
+		&:first-child {
+			margin-left: 20px;
+		}
+		position: relative;
+		min-width: 482px;
+		max-width: 482px;
+		height: 394px;
+		background: rgba(38, 38, 38, 0.65);
+		margin-right: 63px;
+		padding: 89px 42px 32px 45px;
+		&__status {
+			position: absolute;
+			top: -11px;
+			left: -23px;
+			background: $color-red;
+			padding: 17px 20px;
+			max-width: 282px;
+			width: 100%;
+			@include font('Halvar Breitschrift', 700, 24px, 28px, $color-white);
+		}
+		&__description {
+			@include font('Inter', 400, 18px, 22px, $color-white);
+		}
+		.arrow {
+			background-color: $color-red;
+			padding: 13px;
+		}
+	}
+	.btn-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 173px;
+		.scrollbar-prev,
+		.scrollbar-next {
+			width: 30px;
+			cursor: pointer;
+			z-index: 23;
+		}
+	}
+
+	.disable {
+		path {
+			fill: #bdbdbd;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.club-cards-cards {
+		padding: 36px 0 60px 10px;
+	}
+}

@@ -1,0 +1,61 @@
+.club-cards {
+	background: url('/assets/images/contacts-bg.png'),
+		linear-gradient(88.57deg, rgba(0, 0, 0, 0.3) 7.05%, rgba(0, 0, 0, 0) 88.83%),
+		linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2)),
+		url(82303825_3457178317658022_8003798369300381696_o.jpg) no-repeat center;
+	background-size: cover;
+
+	min-height: 76vh;
+}
+
+.ccs {
+	// club-cards-section
+	&__item {
+		&:first-child {
+			margin-left: 30px;
+		}
+		margin-right: 78px;
+		display: flex;
+		position: relative;
+		min-width: 831px;
+		height: 523px;
+		background: rgba(38, 38, 38, 0.65);
+		padding: 53px 67px 0 42px;
+		&-status {
+			position: absolute;
+			top: -11px;
+			left: -23px;
+			background: $color-red;
+			padding: 17px 20px;
+			max-width: 282px;
+			width: 100%;
+			@include font('Halvar Breitschrift', 700, 24px, 28px, $color-white);
+		}
+		&-left {
+			margin-top: 26px;
+			img {
+				object-fit: cover;
+				width: 253px;
+				height: 173px;
+				margin-right: 52px;
+			}
+		}
+		&-right {
+			max-width: 417px;
+		}
+		&-item {
+			@include font('Inter', 400, 16px, 19px, $color-white);
+			list-style: disc;
+		}
+	}
+	&__text {
+		@include font('Inter', 400, 16px, 19px, $color-white);
+	}
+}
+
+
+
+
+
+
+

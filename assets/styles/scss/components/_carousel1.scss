@@ -1,0 +1,84 @@
+.carousel1 {
+	padding: 86px 0 108px 166px;
+	.cards-list {
+		display: flex;
+		overflow-x: scroll;
+		margin-bottom: -15px;
+		padding: 46px 0 60px 0;
+		&::-webkit-scrollbar {
+			height: 3px;
+			border-radius: 5px;
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: #dadada;
+		}
+
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: $color-red;
+		}
+
+		&::-webkit-scrollbar-button {
+			// width: 300px;
+		}
+		&::-webkit-scrollbar-track {
+			margin-right: 600px;
+		}
+	}
+	&__item {
+		position: relative;
+		min-width: 964px;
+		max-width: 964px;
+		height: 432px;
+		margin-right: 96px;
+		.arrow {
+			background-color: $color-red;
+			padding: 13px;
+		}
+		img {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__info {
+		position: absolute;
+		bottom: -12px;
+		right: -30px;
+		background: $color-red;
+		padding: 17px 20px;
+		max-width: 718px;
+		width: 100%;
+	}
+	&__title {
+		@include font('Halvar Breitschrift', 700, 24px, 27px, $color-white);
+		margin-bottom: 8px;
+	}
+	&__description {
+		@include font('Inter', 400, 18px, 21px, $color-white);
+	}
+	.btn-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 173px;
+		.scrollbar-prev,
+		.scrollbar-next {
+			width: 30px;
+			cursor: pointer;
+			z-index: 23;
+		}
+	}
+
+	.disable {
+		path {
+			fill: #bdbdbd;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.carousel1 {
+		padding: 36px 0 60px 10px;
+	}
+}

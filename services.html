@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Karven</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/styles/css/index.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="burger-menu">
+				<div class="burger-menu__btn-wrapper">
+					<button class="burger-menu__btn"></button>
+				</div>
+				<div class="burger-menu__list-wrapper">
+					<ul class="burger-menu__list">
+						<li class="burger-menu__item"><a class="" href="./index.html">Главная</a></li>
+						<li class="burger-menu__item"><a class="" href="./about-club.html">О клубе</a></li>
+						<li class="burger-menu__item">
+							<a class="" href="./coaches.html">Наши тренеры</a>
+						</li>
+						<li class="burger-menu__item">
+							<a class="cr" href="./services.html">Услуги</a>
+						</li>
+						<li class="burger-menu__item">
+							<a class="" href="./club-cards.html">Клубные карты</a>
+						</li>
+						<li class="burger-menu__item">
+							<a class="" href="./childrens-fitness.html">Детский фитнес</a>
+						</li>
+						<li class="burger-menu__item">
+							<a class="" href="./contacts.html">Контакты</a>
+						</li>
+						<li class="burger-menu__item">
+							<a class="" href="./schedule.html">Еще</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="header__container">
+				<div class="header__row">
+					<img src="./assets//images/logo.png" class="header__logo" alt="logo" />
+
+					<ul class="header__nav">
+						<li class="header__nav-item">
+							<a class="header__text" href="./index.html">Главная</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__text" href="./about-club.html">О клубе</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__text" href="./coaches.html">Наши тренеры</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__text cr" href="./services.html">Услуги</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__text" href="./club-cards.html">Клубные карты</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__text" href="./childrens-fitness.html">Детский фитнес</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__text" href="./contacts.html">Контакты</a>
+						</li>
+						<li class="header__nav-item">
+							<a class="header__text" href="./schedule.html">Еще</a>
+						</li>
+					</ul>
+
+					<div class="header__contacts">
+						<a class="header__text me-4" href="tel:+996509567894">+996 509 567894</a>
+						<a href="#form" class="leave-request-btn me-3">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero services">
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title title">Услуги</h1>
+						<p class="hero__description description">
+							Лидер фитнес индустрии нашей страны, клуб №1 в сегменте «премиум» класса, развивающий абсолютно все
+							программы фитнеса, плавания, тенниса, боевых искусств и триатлона.
+						</p>
+						<div class="button-group">
+							<a href="#form" class="leave-request-btn me-3">Оставить заявку</a>
+							<a class="" href="./club-cards.html">Посмотреть клубные карты</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="services-section">
+				<img class="services-section__bg-item" src="./assets/images/services-section-bg.svg" alt="bg item" />
+				<div class="container">
+					<div class="services-section__top d-flex justify-content-between align-items-center">
+						<h3 class="title">Услуги</h3>
+					</div>
+
+					<ul class="services-section__list">
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-1.svg" alt="Тренажерный зал" />
+							</div>
+							<h4 class="services-section__text">Тренажерный зал</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-2.svg" alt="Бассейн" />
+							</div>
+							<h4 class="services-section__text">Бассейн</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-3.svg" alt="Групповые программы" />
+							</div>
+							<h4 class="services-section__text">Групповые программы</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-4.svg" alt="Теннис" />
+							</div>
+							<h4 class="services-section__text">Теннис</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-5.svg" alt="Персональный тренинг" />
+							</div>
+							<h4 class="services-section__text">Персональный тренинг</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-6.svg" alt="Фитнес-тестирование" />
+							</div>
+							<h4 class="services-section__text">Фитнес-тестирование</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-7.svg" alt="Сауна и хамам" />
+							</div>
+							<h4 class="services-section__text">Сауна и хамам</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-8.svg" alt="Массаж" />
+							</div>
+							<h4 class="services-section__text">Массаж</h4>
+						</li>
+						<li class="services-section__item">
+							<div class="services-section__icon">
+								<img src="./assets/images/services-9.svg" alt="Фито-бар" />
+							</div>
+							<h4 class="services-section__text">Фито-бар</h4>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="gym">
+				<div class="carousel1">
+					<h4 class="title">Тренажерный зал</h4>
+					<ul class="cards-list">
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Кардиотренажёры</h5>
+								<p class="carousel1__description">
+									Наша кардиозона представлена профессиональными беговыми дорожками, АМТ, меховыми дорожками, гребными
+									тренажерами, эллиптическим и вело тренажёрами.
+								</p>
+							</div>
+							<img src="./assets/images/carousel1-item.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Кардиотренажёры</h5>
+								<p class="carousel1__description">
+									Наша кардиозона представлена профессиональными беговыми дорожками, АМТ, меховыми дорожками, гребными
+									тренажерами, эллиптическим и вело тренажёрами.
+								</p>
+							</div>
+							<img src="./assets/images/carousel1-item.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Кардиотренажёры</h5>
+								<p class="carousel1__description">
+									Наша кардиозона представлена профессиональными беговыми дорожками, АМТ, меховыми дорожками, гребными
+									тренажерами, эллиптическим и вело тренажёрами.
+								</p>
+							</div>
+							<img src="./assets/images/carousel1-item.png" alt="coache" />
+						</li>
+					</ul>
+					<div class="btn-wrapper">
+						<svg
+							class="scrollbar-prev disable"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893V0.514893Z"
+								fill="#EA3636"
+							/>
+						</svg>
+
+						<svg
+							class="active scrollbar-next"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+								fill="#EA3636"
+							/>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="pool">
+				<div class="services__container">
+					<h4 class="title mb-5">Бассейн</h4>
+					<div class="services__item">
+						<img src="./assets/images/pool-item.png" alt="pool" />
+						<div class="services__info">
+							<h5 class="services__title">Занятия плавания</h5>
+							<p class="services__description">
+								Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания, а
+								также для занятий аквааэробикой.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="group-programs">
+				<div class="carousel1">
+					<h4 class="title">Групповые программы</h4>
+					<ul class="cards-list">
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Программы Club Joy</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/group-programs-item.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Программы Club Joy</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/group-programs-item.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Программы Club Joy</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/group-programs-item.png" alt="coache" />
+						</li>
+					</ul>
+					<div class="btn-wrapper">
+						<svg
+							class="scrollbar-prev disable"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893V0.514893Z"
+								fill="#EA3636"
+							/>
+						</svg>
+
+						<svg
+							class="active scrollbar-next"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+								fill="#EA3636"
+							/>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="tennis">
+				<div class="services__container">
+					<h4 class="title mb-5">Теннис</h4>
+					<div class="services__item">
+						<img src="./assets/images/tennis-item.png" alt="tennes" />
+						<div class="services__info">
+							<h5 class="services__title">Занятия тенниса</h5>
+							<p class="services__description">
+								Теннисный корт KARVEN club — это единственный в стране корт класса Premium, построенный по самым
+								современным технологиям с идеально ровной поверхностью и покрытием, отвечающий всем мировым стандартам.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="personal-training">
+				<div class="carousel1">
+					<h4 class="title">Персональный тренинг</h4>
+					<ul class="cards-list">
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Только лучшие фитнес-программы</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/coaches-bg.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Только лучшие фитнес-программы</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/coaches-bg.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Только лучшие фитнес-программы</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/coaches-bg.png" alt="coache" />
+						</li>
+					</ul>
+					<div class="btn-wrapper">
+						<svg
+							class="scrollbar-prev disable"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893V0.514893Z"
+								fill="#EA3636"
+							/>
+						</svg>
+
+						<svg
+							class="active scrollbar-next"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+								fill="#EA3636"
+							/>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="fitness-testing">
+				<div class="carousel1">
+					<h4 class="title">Фитнес-тестирование</h4>
+					<ul class="cards-list">
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Только лучшие фитнес-программы</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/tennis-item.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Только лучшие фитнес-программы</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/tennis-item.png" alt="coache" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Только лучшие фитнес-программы</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/tennis-item.png" alt="coache" />
+						</li>
+					</ul>
+					<div class="btn-wrapper">
+						<svg
+							class="scrollbar-prev disable"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893V0.514893Z"
+								fill="#EA3636"
+							/>
+						</svg>
+
+						<svg
+							class="active scrollbar-next"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+								fill="#EA3636"
+							/>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="additional-services">
+				<div class="carousel1">
+					<h4 class="title">Дополнительные услуги</h4>
+					<ul class="cards-list">
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Сауна и хамам</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/sauna.png" alt="sauna" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Сауна и хамам</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/sauna.png" alt="sauna" />
+						</li>
+						<li class="carousel1__item">
+							<div class="carousel1__info">
+								<h5 class="carousel1__title">Сауна и хамам</h5>
+								<p class="carousel1__description">
+									Большой 25 метровый бассейн с шестью дорожками, предназначенный для свободного и спортивного плавания,
+									а также для занятий аквааэробикой.
+								</p>
+							</div>
+							<img src="./assets/images/sauna.png" alt="sauna" />
+						</li>
+					</ul>
+					<div class="btn-wrapper">
+						<svg
+							class="scrollbar-prev disable"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893V0.514893Z"
+								fill="#EA3636"
+							/>
+						</svg>
+
+						<svg
+							class="active scrollbar-next"
+							width="10"
+							height="18"
+							viewBox="0 0 13 18"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+								fill="#EA3636"
+							/>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="rules">
+				<div class="rules__container">
+					<h4 class="rules__title">Правила посещения клуба</h4>
+					<ul class="rules__list">
+						<li class="rules__item">Перед началом занятия рекомендуется пройти спортивное тестирование.</li>
+						<li class="rules__item">
+							Опоздание на урок более чем на 10 минут опасно для Вашего здоровья. Во избежание травм, инструктор вправе
+							не допустить на данное занятие Членов Клуба.
+						</li>
+						<li class="rules__item">
+							Не разрешается использовать свою собственную хореографию и свободные веса без соответствующей команды
+							инструктора.
+						</li>
+						<li class="rules__item">
+							Во избежание травм настоятельно рекомендуется посещение уроков, соответствующих Вашему уровню
+							подготовленности.
+						</li>
+						<li class="rules__item">
+							После окончания занятий необходимо вернуть использованное оборудование в специально отведенные места.
+							Члены Клуба несут материальную ответственность за утерю или порчу оборудования, инвентаря и иного
+							имущества Клуба.
+						</li>
+						<li class="rules__item">Использование мобильных телефонов в залах групповых занятий не разрешено.</li>
+						<li class="rules__item">Тренировка в уличной обуви запрещена.</li>
+						<li class="rules__item">Настоятельная просьба не использовать «сильный» парфюм.</li>
+						<li class="rules__item">Пожалуйста, сведите разговоры до минимума.</li>
+						<li class="rules__item">Запрещается резервировать места в зале.</li>
+						<li class="rules__item">Некоторые групповые занятия проводятся по предварительной записи.</li>
+						<li class="rules__item">
+							Администрация оставляет за собой право поменять заявленного в расписании инструктора и вносить изменения в
+							расписание групповых занятий.
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="coaches-cards">
+				<img class="coaches-cards__bg" src="./assets/images/coaches-cards-bg.svg" alt="bg" />
+				<div class="coaches-cards__top d-flex justify-content-between align-items-center">
+					<h3 class="title">Тренеры</h3>
+					<a class="d-inline-block cr me-5" href="./coaches.html">Смотреть всех</a>
+				</div>
+				<ul class="cards-list">
+					<li class="coaches-cards__item">
+						<div class="coaches-cards__info">
+							<h5 class="coaches-cards__fullname">Ермолов Федор</h5>
+							<p class="coaches-cards__profession">Фитнес-менеджер</p>
+						</div>
+						<img src="./assets/images/coache1.png" alt="coache" />
+					</li>
+					<li class="coaches-cards__item">
+						<div class="coaches-cards__info">
+							<h5 class="coaches-cards__fullname">Ермолов Федор</h5>
+							<p class="coaches-cards__profession">Фитнес-менеджер</p>
+						</div>
+						<img src="./assets/images/coache2.png" alt="coache" />
+					</li>
+					<li class="coaches-cards__item">
+						<div class="coaches-cards__info">
+							<h5 class="coaches-cards__fullname">Ермолов Федор</h5>
+							<p class="coaches-cards__profession">Фитнес-менеджер</p>
+						</div>
+						<img src="./assets/images/coache3.png" alt="coache" />
+					</li>
+					<li class="coaches-cards__item">
+						<div class="coaches-cards__info">
+							<h5 class="coaches-cards__fullname">Ермолов Федор</h5>
+							<p class="coaches-cards__profession">Фитнес-менеджер</p>
+						</div>
+						<img src="./assets/images/coache4.png" alt="coache" />
+					</li>
+				</ul>
+				<div class="btn-wrapper">
+					<svg
+						class="scrollbar-prev disable"
+						width="10"
+						height="18"
+						viewBox="0 0 13 18"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893V0.514893Z"
+							fill="#EA3636"
+						/>
+					</svg>
+
+					<svg
+						class="active scrollbar-next"
+						width="10"
+						height="18"
+						viewBox="0 0 13 18"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+							fill="#EA3636"
+						/>
+					</svg>
+				</div>
+			</section>
+
+			<section class="club-cards-cards">
+				<h3 class="title">Клубные карты</h3>
+				<ul class="cards-list">
+					<li class="club-cards-cards__item">
+						<div class="club-cards-cards__item__status">VIP</div>
+						<p class="club-cards-cards__item__description">
+							В KARVEN club занимаются успешные, целеустремленные и уверенные в себе бизнесмены, политики.
+						</p>
+						<div class="club-cards-cards__item__wrapper d-flex justify-content-between align-items-end">
+							<img src="./assets/images/card-VIP.png" alt="vip card" />
+							<a class="mb-4" href="./club-cards.html">
+								<img class="arrow" src="./assets/images/arrow-right-top.svg" alt="link" />
+							</a>
+						</div>
+					</li>
+					<li class="club-cards-cards__item">
+						<div class="club-cards-cards__item__status">VIP</div>
+						<p class="club-cards-cards__item__description">
+							В KARVEN club занимаются успешные, целеустремленные и уверенные в себе бизнесмены, политики.
+						</p>
+						<div class="club-cards-cards__item__wrapper d-flex justify-content-between align-items-end">
+							<img src="./assets/images/card-VIP.png" alt="vip card" />
+							<a class="mb-4 arrow" href="./club-cards.html">
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0.338172 17.6632C0.502266 17.8273 0.724825 17.9195 0.956889 17.9195C1.18895 17.9195 1.41151 17.8273 1.57561 17.6632L16.1687 3.07008L16.1675 10.8573C16.1675 11.0896 16.2598 11.3125 16.4241 11.4768C16.5884 11.6411 16.8112 11.7334 17.0436 11.7334C17.2759 11.7334 17.4988 11.6411 17.6631 11.4768C17.8274 11.3125 17.9197 11.0896 17.9197 10.8573L17.9197 0.957779C17.9198 0.842687 17.8973 0.728696 17.8533 0.622336C17.8093 0.515976 17.7448 0.419338 17.6634 0.337955C17.582 0.256572 17.4854 0.192045 17.379 0.148068C17.2727 0.104091 17.1587 0.0815284 17.0436 0.0816739H7.14407C6.91172 0.0816739 6.68888 0.173978 6.52458 0.33828C6.36027 0.502581 6.26797 0.725422 6.26797 0.957779C6.26797 1.19014 6.36027 1.41298 6.52458 1.57728C6.68888 1.74158 6.91172 1.83388 7.14407 1.83388L14.9313 1.83265L0.338172 16.4257C0.174077 16.5898 0.0818896 16.8124 0.0818896 17.0445C0.0818896 17.2765 0.174077 17.4991 0.338172 17.6632V17.6632Z"
+										fill="white"
+									/>
+								</svg>
+							</a>
+						</div>
+					</li>
+					<li class="club-cards-cards__item">
+						<div class="club-cards-cards__item__status">VIP</div>
+						<p class="club-cards-cards__item__description">
+							В KARVEN club занимаются успешные, целеустремленные и уверенные в себе бизнесмены, политики.
+						</p>
+						<div class="club-cards-cards__item__wrapper d-flex justify-content-between align-items-end">
+							<img src="./assets/images/card-VIP.png" alt="vip card" />
+							<a class="mb-4" href="./club-cards.html">
+								<img class="arrow" src="./assets/images/arrow-right-top.svg" alt="link" />
+							</a>
+						</div>
+					</li>
+				</ul>
+				<div class="btn-wrapper">
+					<svg
+						class="scrollbar-prev disable"
+						width="10"
+						height="18"
+						viewBox="0 0 13 18"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893V0.514893Z"
+							fill="#EA3636"
+						/>
+					</svg>
+
+					<svg
+						class="active scrollbar-next"
+						width="10"
+						height="18"
+						viewBox="0 0 13 18"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+							fill="#EA3636"
+						/>
+					</svg>
+				</div>
+			</section>
+
+			<section class="photos">
+				<div class="container">
+					<img class="photos__bg" src="./assets/images/photos-bg.svg" alt="photos bg" />
+					<h4 class="title">Фоточки</h4>
+					<div class="photos__container">
+						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+							<div class="photos__btn-wrapper">
+								<button
+									class="photos__prev photos__btn carousel-control-prev"
+									data-bs-target="#carouselExampleControls"
+									data-bs-slide="prev"
+								>
+									<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M8.53499 0.514893L0.0499878 8.99989L8.53499 17.4849L9.94999 16.0709L2.87799 8.99989L9.94999 1.92889L8.53499 0.514893Z"
+											fill="#EA3636"
+										/>
+									</svg>
+								</button>
+
+								<button
+									class="arrowActive photos__btn photos__next photos__btn carousel-control-next"
+									data-bs-target="#carouselExampleControls"
+									data-bs-slide="next"
+								>
+									<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M1.46499 17.4849L9.94999 8.99989L1.46499 0.514893L0.0499878 1.92889L7.12199 8.99989L0.0499878 16.0709L1.46499 17.4849Z"
+											fill="#EA3636"
+										/>
+									</svg>
+								</button>
+							</div>
+
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="./assets/images/photo1.png" class="d-block w-100" alt="..." />
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/images/hero-bg.png" class="d-block w-100" alt="..." />
+								</div>
+								<div class="carousel-item">
+									<img src="./assets/images/photo1.png" class="d-block w-100" alt="..." />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="form" id="form">
+				<form action="" class="container-lg">
+					<h4 class="form__title">Остались вопросы?</h4>
+					<div class="form__item-wrapper">
+						<input class="form__input me-5" placeholder="Ваше имя" type="text" required />
+						<input class="form__input me-5" placeholder="Номер телефона" type="text" required />
+						<button class="form__btn">Отправить</button>
+					</div>
+					<label class="form__label">
+						<input type="checkbox" class="form__checkbox" required />
+						Согласен с обработкой моих персональных данных
+					</label>
+				</form>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container-lg">
+				<div class="footer__top row justify-content-between flex-wrap">
+					<div class="footer__logo col-2">
+						<img src="./assets//images/logo.png" class="header__logo" alt="logo" />
+					</div>
+
+					<div class="footer__contacts col-3">
+						<h5 class="footer__title">Наши контакты</h5>
+						<p class="footer__text mb-2">г. Бишкек, ул. Гоголя, 77</p>
+						<div class="d-flex flex-column mb-2">
+							<a class="footer__text" href="tel:+996312681212">+996 (312) 68 12 12</a>
+							<a class="footer__text" href="tel:+996312681515">+996 (312) 68 15 15</a>
+							<a class="footer__text" href="tel:+996556681515">+996 (556) 68 15 15</a>
+						</div>
+						<div class="footer__text d-flex align-items-center mb-2">
+							<span class="footer__text fw-bolder me-1"> Email: </span>
+							<a href="mailto:karvenclub.sales@gmail.com">karvenclub.sales@gmail.com</a>
+						</div>
+						<p class="footer__text">В выходные и праздничные дни Клуб работает с 08:00 по 22:00.</p>
+					</div>
+
+					<div class="footer__social-network col-2 d-flex flex-column">
+						<h5 class="footer__title">Социальные сети</h5>
+						<a target="_blank" href="https://www.facebook.com/" class="footer__text mb-2">Facebook</a>
+						<a target="_blank" href="https://www.instagram.com/tawmant/" class="footer__text">Instagram</a>
+					</div>
+
+					<form action="" class="footer__form col-3">
+						<h5 class="footer__title">Рассылка</h5>
+						<p class="footer__text mb-2 w-75">Подпишитесь, чтобы получить спец. предложение</p>
+						<div class="footer__input-wrapper">
+							<input type="text" placeholder="Ваш e-mail" />
+							<button type="submit">
+								<svg width="43" height="17" viewBox="0 0 43 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.699951 8.3502H42.1M42.1 8.3502L34.4824 0.700195M42.1 8.3502L34.4824 16.0002"
+										stroke="#F2F2F2"
+										stroke-width="0.9"
+									/>
+								</svg>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="footer__bottom container-lg">
+				<p class="footer__bottom-text">2021 © KARVEN sport club</p>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+			integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+			crossorigin="anonymous"
+		></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

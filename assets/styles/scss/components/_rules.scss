@@ -1,0 +1,28 @@
+.rules {
+	&__container {
+		max-width: 1160px;
+		margin: 0 auto;
+	}
+	&__title {
+		@include font('Halvar Breitschrift', 700, 48px, 56px, $color-white);
+	}
+	&__list {
+		padding: 48px 45px 45px 51px;
+		margin: 33px 10px;
+		background: rgba(38, 38, 38, 0.65);
+	}
+	&__item {
+		padding-left: 20px;
+		margin-bottom: 15px;
+		list-style: url('/assets/images/arrow-right.svg');
+		@include font('Inter', 400, 18px, 22px, $color-white);
+	}
+}
+
+@media (max-width: 900px) {
+	.rules {
+		&__title {
+			text-align: center;
+		}
+	}
+}

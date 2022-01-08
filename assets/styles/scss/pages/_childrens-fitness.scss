@@ -1,0 +1,78 @@
+.childrens-fitness {
+	background: url('/assets/images/childrens-fitness-bg.png'),
+		linear-gradient(88.57deg, rgba(0, 0, 0, 0.3) 7.05%, rgba(0, 0, 0, 0) 88.83%),
+		linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2)),
+		url(82303825_3457178317658022_8003798369300381696_o.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.childrens-section {
+	&__container {
+		max-width: 1160px;
+		margin: 0 auto;
+	}
+	.title {
+		margin-bottom: 86px;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 20px;
+	}
+	&__item {
+		position: relative;
+		max-width: 482px;
+		width: 100%;
+		height: 394px;
+		margin-right: 64px;
+		img {
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&__info {
+		position: absolute;
+		top: -35px;
+		left: -23px;
+		background: $color-red;
+		padding: 7px 20px;
+		width: 282px;
+		height: 70px;
+		display: flex;
+		align-items: center;
+	}
+	&__title {
+		@include font('Halvar Breitschrift', 700, 24px, 27px, $color-white);
+	}
+	&__description {
+		position: absolute;
+		bottom: 32px;
+		left: 43px;
+		@include font('Inter', 400, 18px, 21px, $color-white);
+	}
+}
+
+.tennis,
+.gymnastic {
+	margin: 85px 0 108px 0;
+}
+
+@media (max-width: 1135px) {
+	.childrens-section {
+		.title {
+			margin-bottom: 20px;
+		}
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__item {
+			margin: 30px auto;
+		}
+		&__info {
+			top: 22px;
+			left: -5px;
+		}
+	}
+}

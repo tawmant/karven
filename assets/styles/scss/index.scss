@@ -1,0 +1,32 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+// base
+@import './variables';
+@import './mixins';
+@import './base';
+
+// components
+@import './components/burger-menu';
+@import './components/header';
+@import './components/hero';
+@import './components/about-us';
+@import './components/club-halls';
+@import './components/coaches-cards';
+@import './components/club-cards-cards';
+@import './components/carousel1';
+@import './components/carousel2';
+@import './components/services-section';
+@import './components/rules';
+@import './components/photos';
+@import './components/form';
+@import './components/footer';
+
+// pages
+@import './pages/about-club';
+@import './pages/coaches';
+@import './pages/contacts';
+@import './pages/services';
+@import './pages/childrens-fitness';
+@import './pages/club-cards'; 
+@import './pages/schedule';

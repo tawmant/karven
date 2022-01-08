@@ -1,0 +1,78 @@
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+div {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #000000;
+}
+
+li {
+	list-style: none;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	outline: none;
+	border: none;
+}
+
+.cr {
+	color: $color-red !important;
+}
+
+.leave-request-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #ffffff;
+	box-sizing: border-box;
+	border-radius: 41px;
+	padding: 14px 24px;
+	background: none;
+	max-width: 176px;
+	&:hover {
+		color: $color-white;
+	}
+	@include font('Halvar Breitschrift', 500, 14px, 16px, $color-white);
+}
+
+.title {
+	@include font('Halvar Breitschrift', 700, 72px, 83px, $color-white);
+}
+.description {
+	@include font('Inter', 500, 18px, 25px, $color-white);
+	margin: 14px 0 30px 0;
+}
+
+@media (max-width: 576px) {
+	.title {
+		@include font('Halvar Breitschrift', 700, 32px, 43px, $color-white);
+		text-align: center;
+	}
+	.description {
+		@include font('Inter', 500, 15px, 20px, $color-white);
+		text-align: center;
+	}
+}

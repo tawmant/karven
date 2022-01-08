@@ -1,0 +1,48 @@
+.photos {
+	position: relative;
+	margin-top: 67px;
+	&__container {
+		max-width: 826px;
+		margin: 56px auto 78px auto;
+	}
+	&__bg {
+		position: absolute;
+		top: -101px;
+		left: 0;
+	}
+	&__btn-wrapper {
+		display: flex;
+		position: absolute;
+		top: -20px;
+		right: -35px;
+		width: 162px;
+		height: 58px;
+	}
+	&__prev,
+	&__next {
+		opacity: 1;
+		flex-grow: 1;
+		width: 81px;
+		background: $color-white;
+	}
+}
+
+.arrowActive {
+	svg {
+		path {
+			fill: $color-red;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.photos {
+		&__btn-wrapper {
+			top: auto;
+			bottom: -20px;
+			right: 50%;
+			transform: translateX(50%);
+			z-index: 1232;
+		}
+	}
+}

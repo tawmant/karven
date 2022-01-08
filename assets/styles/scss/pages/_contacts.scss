@@ -1,0 +1,13 @@
+.contacts {
+	background: url('/assets/images/contacts-bg.png'),
+		linear-gradient(88.57deg, rgba(0, 0, 0, 0.3) 7.05%, rgba(0, 0, 0, 0) 88.83%),
+		linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2)),
+		url(82303825_3457178317658022_8003798369300381696_o.jpg) no-repeat center;
+	background-size: cover;
+	&__icon {
+		margin-right: 25px;
+	}
+	&__text {
+		@include font('Inter', 400, 17px, 21px, $color-white);
+	}
+}

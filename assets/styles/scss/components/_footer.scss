@@ -1,0 +1,76 @@
+.footer {
+	padding-top: 66px;
+	&__top {
+		// display: grid;
+		// grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding-bottom: 37px;
+	}
+	&__logo {
+		min-width: 123px;
+	}
+	&__contacts {
+		min-width: 207px;
+	}
+	&__social-network {
+		min-width: 166px;
+	}
+	&__form {
+		min-width: 300px;
+	}
+	&__title {
+		@include font('Halvar Breitschrift', 500, 16px, 19px, $color-white);
+		margin-bottom: 17px;
+	}
+	&__text {
+		@include font('Halvar Breitschrift', 500, 12px, 15px, #e0e0e0);
+		a {
+			@include font('Halvar Breitschrift', 500, 12px, 15px, #e0e0e0);
+		}
+	}
+	&__input-wrapper {
+		display: flex;
+		border-bottom: 1px solid #303030;
+		input {
+			background: inherit;
+			padding: 13px 5px;
+			outline: none;
+			border: none;
+			width: 80%;
+			@include font('Halvar Breitschrift', 500, 12px, 15px, #e0e0e0);
+			&::placeholder {
+				color: #b1b1b1;
+			}
+		}
+		button {
+			background: inherit;
+			outline: none;
+			border: none;
+		}
+	}
+	.line {
+		height: 1px;
+		width: 100%;
+		background-color: #353535;
+	}
+	.footer__bottom {
+		padding: 24px 0;
+		&-text {
+			@include font('Halvar Breitschrift', 500, 14px, 17px, #f2f2f2);
+		}
+	}
+}
+
+@media (max-width: 530px) {
+	.footer {
+		&__top {
+			div,
+			form {
+				width: 100% !important;
+			}
+		}
+		&__title {
+			@include font('Halvar Breitschrift', 500, 16px, 19px, $color-white);
+			margin: 10px 0;
+		}
+	}
+}
