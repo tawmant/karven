@@ -1,5 +1,5 @@
 .schedule {
-	background: url('/assets/images/contacts-bg.png'),
+	background: url('../../images/contacts-bg.png'),
 		linear-gradient(88.57deg, rgba(0, 0, 0, 0.3) 7.05%, rgba(0, 0, 0, 0) 88.83%),
 		linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2)),
 		url(82303825_3457178317658022_8003798369300381696_o.jpg) no-repeat center;
@@ -12,7 +12,7 @@
 	padding: 170px 0 115px 0;
 	&__wrapper {
 		display: flex;
-		justify-content: center
+		justify-content: center;
 	}
 	&__text {
 		@include font('Inter', 400, 17px, 21px, $color-white);
@@ -20,8 +20,7 @@
 }
 
 @media (max-width: 900px) {
-.schedule-section {
-	padding: 70px 0 80px 0;
-
-}
+	.schedule-section {
+		padding: 70px 0 80px 0;
+	}
 }

@@ -2,7 +2,7 @@
 	min-height: 100vh;
 	position: relative;
 	z-index: 1;
-	background: url('/assets/images/hero-bg.png'),
+	background: url('../../images/hero-bg.png'),
 		linear-gradient(88.57deg, rgba(0, 0, 0, 0.3) 7.05%, rgba(0, 0, 0, 0) 88.83%),
 		linear-gradient(0deg, rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.2)),
 		url(82303825_3457178317658022_8003798369300381696_o.jpg) no-repeat center;
@@ -25,7 +25,7 @@
 
 @media (max-width: 576px) {
 	.hero {
-		padding: 10px;
+		padding: 0 10px;
 		&__content {
 		}
 		.button-group {
