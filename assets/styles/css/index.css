@@ -270,8 +270,12 @@ button {
 @media (max-width: 900px) {
   .header__row {
     margin: 0 10px;
+    justify-content: space-around;
   }
   .header__nav {
+    display: none;
+  }
+  .header__contacts a:last-child {
     display: none;
   }
 }
@@ -284,6 +288,15 @@ button {
   background-size: cover;
 }
 
+.hero__poster-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero__container {
   max-width: 1108px;
   margin: 0 auto;
@@ -291,6 +304,9 @@ button {
 
 .hero__content {
   padding-top: 33vh;
+  z-index: 3;
+  max-width: 1108px;
+  position: absolute;
 }
 
 .hero .button-group {
@@ -394,7 +410,7 @@ button {
 }
 
 .club-halls .cards-list::-webkit-scrollbar {
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
 }
 
@@ -413,7 +429,6 @@ button {
 .club-halls__item {
   position: relative;
   min-width: 543px;
-  max-width: 543px;
   height: 336px;
   margin-right: 63px;
 }
@@ -474,6 +489,30 @@ button {
   }
 }
 
+@media (max-width: 500px) {
+  .club-halls__item {
+    position: relative;
+    min-width: 100%;
+    height: 336px;
+    margin-right: 63px;
+  }
+  .club-halls__item:first-child {
+    margin-left: 0px;
+  }
+  .club-halls__item .arrow {
+    background-color: #ea3636;
+    padding: 13px;
+  }
+  .club-halls__item img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .club-halls__info {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
 .coaches-cards {
   padding: 86px 0 108px 166px;
   position: relative;
@@ -500,7 +539,7 @@ button {
 }
 
 .coaches-cards .cards-list::-webkit-scrollbar {
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
 }
 
@@ -614,7 +653,7 @@ button {
 }
 
 .club-cards-cards .cards-list::-webkit-scrollbar {
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
 }
 
@@ -697,6 +736,20 @@ button {
   }
 }
 
+@media (max-width: 500px) {
+  .club-cards-cards {
+    padding: 26px 0 40px 6px;
+  }
+  .club-cards-cards__item {
+    min-width: 100%;
+    max-width: none;
+  }
+  .club-cards-cards__item img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
 .carousel1 {
   padding: 86px 0 108px 166px;
 }
@@ -711,7 +764,7 @@ button {
 }
 
 .carousel1 .cards-list::-webkit-scrollbar {
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
 }
 
@@ -795,6 +848,19 @@ button {
   .carousel1 {
     padding: 36px 0 60px 10px;
   }
+  .carousel1__item {
+    min-width: 100%;
+    max-width: none;
+  }
+  .carousel1__item img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .carousel1__info {
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+  }
 }
 
 .carousel2 {
@@ -811,7 +877,7 @@ button {
 }
 
 .carousel2 .cards-list::-webkit-scrollbar {
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
 }
 
@@ -902,6 +968,26 @@ button {
 @media (max-width: 900px) {
   .carousel2 {
     padding: 36px 0 60px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel2__item {
+    min-width: 100%;
+    max-width: none;
+  }
+  .carousel2__item img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .carousel2__info {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .carousel2__description {
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
   }
 }
 
@@ -1595,6 +1681,29 @@ button {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .ccs__item {
+    flex-direction: column;
+    min-width: 100%;
+    max-width: none;
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  .ccs__item img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .ccs__info {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .ccs__description {
+    text-align: center;
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
 
 .schedule {

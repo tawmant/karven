@@ -53,8 +53,30 @@
 	}
 }
 
-
-
+@media (max-width: 800px) {
+	.ccs {
+		&__item {
+			flex-direction: column;
+			min-width: 100%;
+			max-width: none;
+			height: 100%;
+			padding-bottom: 30px;
+			img {
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+		&__info {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&__description {
+			text-align: center;
+			transform: translateX(-50%);
+			left: 50%;
+		}
+	}
+}
 
 
 

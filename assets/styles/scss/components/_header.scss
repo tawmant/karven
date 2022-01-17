@@ -41,9 +41,15 @@
 	.header {
 		&__row {
 			margin: 0 10px;
+			justify-content: space-around;
 		}
 		&__nav {
 			display: none;
+		}
+		&__contacts {
+			a:last-child {
+				display: none;
+			}
 		}
 	}
 }
